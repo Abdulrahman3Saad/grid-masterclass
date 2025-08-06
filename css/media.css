@@ -1,0 +1,56 @@
+/* Small */
+@media screen and (min-width: 576px) {
+    .fs-sm-35 {
+        font-size: 2.1875rem;
+    }
+
+    .w-sm-60 {
+        width: 60%;
+    }
+
+    .grid {
+        grid-template-areas:
+            "learn-more learn-more"
+            "iphone-6s iphone-6s"
+            "keyboard games"
+            "hardly hardly"
+            "twitter  icloud"
+            " experience icloud"
+            "muchBetter muchBetter"
+            " displayvision displayvision";
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+    .w-md-75 {
+        width: 75%;
+    }
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+    .fs-lg-48 {
+        font-size: 3rem;
+    }
+
+    .w-lg-100 {
+        width: 100%;
+    }
+
+    .w-lg-40 {
+        width: 40%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "iphone-6s iphone-6s iphone-6s iphone-6s iphone-6s iphone-6s learn-more learn-more learn-more learn-more learn-more learn-more"
+            "keyboard keyboard keyboard hardly hardly hardly hardly hardly hardly icloud icloud icloud"
+            "games games games experience experience experience experience experience experience icloud icloud icloud"
+            "twitter twitter twitter muchBetter muchBetter muchBetter displayvision displayvision displayvision displayvision displayvision displayvision";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+}

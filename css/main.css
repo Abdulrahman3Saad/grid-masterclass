@@ -1,0 +1,350 @@
+/* ? -------start global Style----------*/
+:root {
+    --main-color: #9fa3a7;
+    --color-link: #27b9c2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "arvo", serif;
+    font-weight: 400;
+}
+
+p {
+    color: var(--main-color);
+    font-size: 0.875rem;
+    line-height: 1.85;
+}
+
+span {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: var(--main-color);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+:is(.experience, .icloud, .muchBetter, .twitter) :is(span) {
+    font-family: "OpenSans";
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 0.4375rem 0.75rem;
+    background-color: #fa684f;
+}
+a {
+    text-decoration: none;
+    color: #27b9c2;
+    font-family: "OpenSans";
+}
+
+a span {
+    color: inherit;
+}
+
+.title-dark-gray {
+    color: #333;
+}
+
+.fs-8 {
+    font-size: 0.5rem;
+}
+.fs-12 {
+    font-size: 0.75rem;
+}
+
+.fs-14 {
+    font-size: 0.875rem;
+}
+
+.fs-22 {
+    font-size: 1.375rem;
+}
+
+.fs-42 {
+    font-size: 2.625rem;
+}
+
+.px-26 {
+    padding-inline: 1.625rem;
+}
+
+.pt-45 {
+    padding-top: 2.8125rem;
+}
+
+.pt-70 {
+    padding-top: 4.375rem;
+}
+
+.pb-60{
+    padding-bottom: 3.75rem;
+}
+
+.pt-30 {
+    padding-top: 1.875rem;
+}
+
+.px-45 {
+    padding-inline: 2.8125rem;
+}
+
+.py-30 {
+    padding-block: 1.875rem;
+}
+
+.mt-30 {
+    margin-top: 1.875rem;
+}
+
+
+.mt-20 {
+    margin-top: 1.25rem;
+}
+
+.mb-30 {
+    margin-bottom: 1.875rem;
+}
+
+.mb-10 {
+    margin-bottom: 0.625rem;
+}
+
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
+
+.my-14 {
+    margin-block: 0.875rem;
+}
+
+.mt-10 {
+    margin-top: 0.625rem;
+}
+
+
+.lh-1-45 {
+    line-height: 1.45;
+}
+.lh-1-85 {
+    line-height: 1.85;
+}
+
+
+.w-90 {
+    width: 90%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+
+
+.translateX-N7 {
+    transform: translateX(-7%);
+}
+
+.translateX-7 {
+    transform: translateX(7%);
+}
+/* class utilities background-color*/
+
+.bg-section {
+    background-color: #f7f8f9;
+}
+
+body {
+    font-family: "OpenSans";
+}
+
+/* 
+.align-self-around{
+    place-self: center center;
+} */
+
+/* ? -------End global Style----------*/
+
+/* * Start Style Section Grid*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto ;
+
+    gap: 0px 0px;
+    /*  grid-auto-flow: row; */
+
+    grid-template-areas:
+        "learn-more learn-more"
+        "iphone-6s iphone-6s"
+        "keyboard keyboard"
+        "games games"
+        "hardly hardly"
+        "twitter twitter"
+        "experience experience"
+        "icloud icloud"
+        "muchBetter muchBetter"
+        "displayvision displayvision";
+}
+
+.iphone-6s {
+    grid-area: iphone-6s;
+}
+
+.learn-more {
+    grid-area: learn-more;
+}
+
+.keyboard {
+    background-color: #f05638;
+    grid-area: keyboard;
+}
+
+.bg-red-orange {
+    background-color: #f05638;
+}
+.hardly {
+    grid-area: hardly;
+}
+
+.games {
+    grid-area: games;
+}
+
+.experience {
+    background-color: #93b6b7;
+    grid-area: experience;
+}
+
+.experience .inner {
+    background-image: url(../images/UX.png);
+    background-position: 50% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.icloud {
+
+    grid-area: icloud;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.muchBetter {
+    grid-area: muchBetter;
+}
+
+.displayvision {
+    background-color: blueviolet;
+    grid-area: displayvision;
+}
+
+/*============================*/
+.grid .iphone-6s img {
+    width: 15.625rem;
+}
+
+/* .grid .iphone-6s .text-content {
+    width: 33%;
+} */
+
+.grid .iphone-6s .text-content h2 {
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.grid .hardly a {
+    letter-spacing: 2px;
+}
+
+.grid .icloud {
+    background-color: #8f76bc;
+}
+
+.grid .icloud span.badge {
+    background-color: #8b72b6;
+    font-size: 0.625rem;
+    font-weight: 700;
+}
+
+.grid .icloud span.badge i {
+    color: yellow;
+    font-size: 0.75rem;
+}
+
+.grid .icloud .btn {
+    padding: 0.875rem 1.75rem;
+}
+
+.grid .icloud .btn a {
+    letter-spacing: 2px;
+}
+
+.grid .icloud .btn:hover {
+    background-color: #ffc107 ;
+}
+
+.grid .icloud span.meet {
+    background-color: unset;
+    font-family: "Montserrat";
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+.grid .icloud .image-content > * {
+    position: relative;
+}
+
+.grid .icloud .image-content::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #8166b0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.grid .twitter .imag img{
+    width: 15%;
+}
+
+.grid .muchBetter span.badge{
+    background-color: #7BC424   ;
+}
+/*==================Font Face=========================*/
+@font-face {
+    font-family: "arvo", Serif;
+    src: url(../fonts/Arvo-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "arvo";
+    src: url(../fonts/Arvo-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
